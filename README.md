@@ -2,19 +2,18 @@
 <img src="https://i.imgur.com/pvZvAyx.png"/>
 </p>
 
-<h1>Network Files and Permissions</h1>
-This tutorial outlines the Network Files and Permissions within Windows 10 Virtual Machine in Microsoft Azure.<br />
+<h1>Network File Shares and Permissions</h1>
+This tutorial outlines the Network File Shares and Permissions within Windows 10 Virtual Machine in Microsoft Azure.<br />
 
 
 <h2>Video Demonstration</h2>
 
-- ### [YouTube: Network Files and Permissions](https://www.youtube.com)
+- ### [YouTube: Network File Shares and Permissions](https://www.youtube.com)
 
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
-- Internet Information Services (IIS)
 
 <h2>Operating Systems Used </h2>
 
