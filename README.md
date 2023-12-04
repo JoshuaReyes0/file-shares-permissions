@@ -26,9 +26,9 @@ This tutorial outlines the Network File Shares and Permissions within Windows 10
 </p>
 <p>
   
-  - Connect/log into DC-1 as your domain admin account (mydomain.com\jane_admin)
-  - Connect/log into Client-1 as a normal user (mydomain\<someuser>)
-  - On DC-1, on the C:\ drive, create 4 folders: “read-access”, “write-access”, “no-access”, “accounting”
+  - Log in to DC-1 using your domain admin credentials (mydomain.com\jane_admin).
+  - Log in to Client-1 as a regular user (mydomain<someuser>).
+  - On the C:\ drive of DC-1, create four folders: "read-access," "write-access," "no-access," and "accounting."
 </p>
 <br />
 
@@ -44,10 +44,10 @@ This tutorial outlines the Network File Shares and Permissions within Windows 10
 </p>
 <p>
 
-  - Set the following permissions (share the folder) for the “Domain Users” group:
-  - Folder: “read-access”, Group: “Domain Users”, Permission: “Read”
-  - Folder: “write-access”,  Group: “Domain Users”, Permissions: “Read/Write”
-  - Folder: “no-access”, Group: “Domain Admins”, “Permissions: “Read/Write”
+  - Share the folders with the following permissions for the "Domain Users" group:
+  - "read-access" folder: "Domain Users" group with "Read" permission.
+  - "write-access" folder: "Domain Users" group with "Read/Write" permissions.
+  - "no-access" folder: "Domain Admins" group with "Read/Write" permissions.
 </p>
 <br />
 
@@ -56,8 +56,8 @@ This tutorial outlines the Network File Shares and Permissions within Windows 10
 </p>
 <p>
 
-  - On Client-1, navigate to the shared folder (start, run, \\dc-1)
-  - Try to access the folders you just created.
+  - On Client-1, use the Run command (Start > Run > \\dc-1) to navigate to the shared folder. 
+  - Attempt to access the created folders.
 </p>
 <br />
 
@@ -66,9 +66,9 @@ This tutorial outlines the Network File Shares and Permissions within Windows 10
 </p>
 <p>
 
-  - Go back to DC-1, in Active Directory, create a security group called “ACCOUNTANTS”
+  - Return to DC-1, access Active Directory, and establish a security group named "Accounting."
   - On the “accounting” folder you created earlier, set the following permissions:
-  - Folder: “accounting”, Group: “ACCOUNTANTS”, Permissions: “Read/Write”
+  - Folder: “accounting”, Group: “accounting”, Permissions: “Read/Write”
 </p>
 <br />
 
@@ -77,7 +77,7 @@ This tutorial outlines the Network File Shares and Permissions within Windows 10
 </p>
 <p>
   
-  - On Client-1, as  <someuser>, try to access the accountants folder. It should fail.
+  - On Client-1, attempt to access the "accountants" folder. This access attempt should fail.
 </p>
 <br />
 
@@ -86,7 +86,7 @@ This tutorial outlines the Network File Shares and Permissions within Windows 10
 </p>
 <p>
 
-  - On DC-1, make <someuser> a member of the “ACCOUNTANTS”  Security Group
-  - Sign back into Client-1 as <someuser> and try to access the “accounting” share in \\DC-1\
+  - Log back into Client-1 using the specified user account and attempt to access the "accounting" share at \DC-1.
+
 </p>
 <br />
